@@ -29,5 +29,26 @@ public class PageController {
         return "service";
     }
 
+    @GetMapping("/contact")
+    public String grtContact(Model model){
+        model.addAttribute("Name", "SkyTech Technology");
+        model.addAttribute("location", "Pune");
+        return "contact";
+    }
+
+    @GetMapping("/login")
+    public String logIn(Model model){
+        model.addAttribute("Name", "SkyTech Technology");
+        model.addAttribute("location", "Pune");
+        return "login";
+    }
+
+    @GetMapping("/signup")
+    public String signup(Model model){
+        model.addAttribute("Name", "SkyTech Technology");
+        model.addAttribute("location", "Pune");
+        return "signup";
+    }
+
 
 }
